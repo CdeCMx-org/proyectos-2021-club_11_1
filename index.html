@@ -383,59 +383,75 @@ Pero claro, no todo puede ser bonito ¿Verdad? La realidad es que este antibiót
       </div>
     </div>
 <details>
-  <summary>Más información</summary>
+  <summary><strong>¿Quieres ver todos los pasos a detalle?</strong></summary>
   <h2>Pasos para hacer un <strong>docking</strong></h2>
   <p>Después de haber instalado correctamente AutodockTools (ADT) haremos lo siguiente: <br>
 1- Crear un "workfolder" o "carpeta" para archivos del trabajo y ponerle el nombre que tú desees y ubicarlo de preferencia en el Disco (C:) (Ejemplo: docking_CdeCMx) <br>
 2- Abrir el programa ADT <br><br>
 Una vez abierto, deberás seleccionar tu directorio, o sea, elegir la carpeta que el programa leerá de ahora en adelante:<br>
-a) open ADT> File> Preferences>set> Startup Directory (in this section you should put on your workfolder path and set it). for example: “C:\Users\project
-3- prepare ligand and protein in ".pdb" format. Notice, you must labeled them by "Ligand" and "Protein" keywords.
-after having finished these steps you can run ADT: Well! you should do the below ways:
-1- open ADT:
-File > Read Molecule> Select Protein File (“.pdb” file)
-Then:
-Edit > Hydrogens >Add>>>>>> Polar Only >OK
-Edit > Hydrogens> Merge Non Polar >  Continue (in this step if you see any warning please click on "continue")
-then:
-Edit > Charges > Add Kolman Charges> Ok
-File > Save > Write PDB> >Sort Nodes (Check) > OK > (Overwrite) YES
-Well! in the next step you should try prepare the ligand:
-Ligand > Input > Open> Select Ligand File (“.pdb” file) > OK
-Now repeat above steps and then: (in this section you must add charge to your ligand. So, click on Edit menu and:
-Edite> Charges> compute Gasteiger
+a) Abre ADT> File> Preferences>set> Startup Directory (aquí eliges tu carpeta del directorio colocando su ruta). Por ejemplo: “C:\docking_CdeCMx”<br>
+3- Prepara tu ligando y proteína en formato ".pdb". Si lo hiciste anteriormente en PyMol, ¡perfecto! Ahora puedes cambiar el nombre para diferenciarlos mejor, como “proteina.pdb” y “ligando.pdb” <br>
+Ahora sí, puedes empezar a hacer el docking como la Ciencia manda!<br>
+1- Abre ADT:<br>
+Selecciona la pestaña File > Read Molecule> Select Protein File (Aquí eliges el archivo de “proteina.pdb”)<br>
+Después:<br>
+Edit > Hydrogens >Add>>>>>> Polar Only >OK<br>
+Edit > Hydrogens> Merge Non Polar >  Continue (si aparece una ventana emergente, solo haz click en "continue") <br>
+Luego:<br>
+Edit > Charges > Add Kolman Charges> Ok <br>
+File > Save > Write PDB> >Sort Nodes (Check) > OK > (Overwrite) YES <br>
+Bueno! En el siguiente paso debes intentar preparar el ligando <br>
+Ligand > Input > Open> Select Ligand File (“.pdb” file) > OK <br>
+Ahora vuelve a repetir los pasos: (en esta sección deberás agregarle carga a tu ligando). Para hacer esto tendrás que: <br>
+Click en el menú de Editar, después:  <br>
+Edite> Charges> compute Gasteiger <br>
 Ligand > Output > Save as PDBQT
 ******************************
-Now you should be executing AutoGrid4:
-For run AutoGrid following the below steps:
+Ahora deberás ejecutar AutoGrid4: 
+<br>
+Para correr el AutoGrid sigue los siguientes pasos:
+<br>
 1-Grid > Macromole > Choose>  Click (Protein) > Select Molecule > OK > save
+<br>
 2-Grid> Set Map types >Choose Ligand> Click (Ligand) > Select Ligand
+<br>
 3-Grid > GridBox> Set the BOX> File > Close Saving Current
+<br>
 4-Grid > Output > Save GPF> grid.gpf> save
+<br>
 5-Run > Run AutoGrid:
-a) Select Program Pathname: ‘autogrid4.exe’ (i.e. C:\Program Files (x86) \The Scripps Research Institute\Autodock\4.2.6)
-b) Select Parameter Filename: ‘grid.gpf’ (you should select it based on your workfolder path)
-c) Launch!
-Notice! in this step you must waiting for ADT response. please don't "dismiss" it!
+<br>
+a) Selecciona la ruta del programa: ‘autogrid4.exe’ (i.e. C:\Program Files (x86) \The Scripps Research Institute\Autodock\4.2.6)  
+<br>
+b) Selecciona el archivo con los parámetros: ‘grid.gpf’ (Deberás seleccionarlo dependiendo de en dónde está tu carpeta de trabajo)
+<br>
+c)¡Arrancalo! 
+<br>
+Nota: en este paso deberás esperar a que el programa ADT responda. ¡Por favor no deshagas ningún cambio!
+<br><br>
 ***************************************************************
-After having finished above steps following the below ways:
-Run ADT:
-1)Docking > Macromolecule > Set Rigid filename> Select ‘Protein.pdbqt’ > Open
-2-Docking > Ligand > Choose> Click ‘Ligand’ > Select Ligand> Accept
-3-Docking > Search Parameters > Genetic Algorithm> Accept
-4-Docking > Output > Lamarckian GA> Save file as ‘dock.dpf’
-5-Run > Run AutoDock 
-A) Select Program Pathname: ‘autodock4.exe’ (C:\Program Files (x86)\The Scripps Research Institute\Autodock\4.2.6)
-B) Select Parameter Filename: ‘dock.dpf’ (Based on you workfolder path)
-C) Launch!
-Please wait for finishing and don't dismiss it!!
+Una vez que hayas realizado estos pasos tendrás que: 
+
+Run  AutoDock Tools:
+
+1)Docking > Macromolecule > Set Rigid filename> Select ‘Protein.pdbqt’ > Open <br>
+2-Docking > Ligand > Choose> Click ‘Ligand’ > Select Ligand> Accept <br>
+3-Docking > Search Parameters > Genetic Algorithm> Accept <br>
+4-Docking > Output > Lamarckian GA> Save file as ‘dock.dpf’ <br>
+5-Run > Run AutoDock  <br>
+A) Selecciona la ruta del programa: ‘autodock4.exe’. Esta dependerá de la ubicación donde hayas descargado ADT.  Por ejemplo: (C:\Program Files (x86)\The Scripps Research Institute\Autodock\4.2.6\autodock4.exe)<br>
+B) Selecciona el archivo : ‘dock.dpf’ (Basado en la ubicación de tu carpeta de trabajo) <br>
+C) Launch! <br>
+Espera a que acabe, no cierres el programa.  <br><br>
 ***********************************************************
 Docking result analysis:
-1-Analyze > Docking > Open> Select ‘dock.dlg’ > Open >Assign Ligand New Name > OK
-2-Analyze > Macromolecule > Choose> Click ‘Protein’ > Select Macromolecule
-3- Analyze > Conformations> Play, Ranked By Energy > Click on the ‘&’ Button
-4-Set Play Options >Check ‘Build H-Bonds’> View the hydrogen bonds formed > Check ‘Show Info’> View the Interaction Energy > Build Current Write Complex> Save as ‘Result.pdb’ ” Save....
-Now you can see all of your docking results!
+Análisis de los resultados del docking. <br>
+1-Analyze > Docking > Open> Select ‘dock.dlg’ > Open >Assign Ligand New Name > OK <br>
+2-Analyze > Macromolecule > Choose> Click ‘Protein’ > Select Macromolecule <br>
+3- Analyze > Conformations> Play, Ranked By Energy > Click on the ‘&’ Button <br>
+4-Set Play Options >Check ‘Build H-Bonds’> View the hydrogen bonds formed > Check ‘Show Info’> View the Interaction Energy > Build Current Write Complex> Save as ‘Result.pdb’ ” Save.... <br>
+<strong>¡Ahora podrás observar tus resultados!</strong>
+
 </details>
     <div class="row text-left align-items-center pt-5">
       <div class="col-4 col-md-5">
