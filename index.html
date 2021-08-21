@@ -333,41 +333,28 @@ Pero claro, no todo puede ser bonito ¿Verdad? La realidad es que este antibiót
       </div>
        
     </section><!-- End Why Us Section -->
-    <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action" class="call-to-action">
-      <div class="container" data-aos="zoom-out">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">¿Todo listo? Empecemos</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!--  End Call To Action Section -->
-
+   
     <!-- ======= Features Section ======= -->
           
           <section class="fdb-block">
   <div class="container">
     <div class="row justify-content-center pb-5">
       <div class="col-12 text-center">
-        <h1>Froala Design Blocks</h1>
+        <h1><strong>¿Todo listo? Empecemos</strong></h1>
       </div>
     </div>
 
     <div class="row text-left align-items-center pt-5 pb-md-5">
       <div class="col-4 col-md-5">
-        <img alt="image" class="img-fluid" src="./imgs/draws/designer.svg">
+        <img alt="image" class="img-fluid" src="assets/img/peliAB.gif">
       </div>
 
       <div class="col-12 col-md-5 m-md-auto">
-        <h2><strong>Feature One</strong></h2>
-        <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-        <p><a href="https://www.froala.com">Learn More <i class="fas fa-angle-right"></i></a></p>
+        <h2><strong>Paso 1. Pymol</strong></h2>
+        <p class="lead"> Primero abriremos Pymol, este programa nos permitirá visualizar y preparar las moléculas con las que vamos a trabajar, es decir, preparar nuestra proteína y el ligando por separado.
+En nuestro caso, usaremos la “cadena A” de la Topoisomerasa II como proteína y como ligandos utilizaremos ANP (ligante natural), DM2 (Doxorrubicina) y CDX (Dexrazoxano).
+Si quieres puedes usar nuestros archivos: </p>
+        
       </div>
     </div>
 
@@ -377,9 +364,8 @@ Pero claro, no todo puede ser bonito ¿Verdad? La realidad es que este antibiót
       </div>
 
       <div class="col-12 col-md-5">
-        <h2><strong>Feature Two</strong></h2>
-        <p class="lead">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-        <p><a href="https://www.froala.com">Learn More <i class="fas fa-angle-right"></i></a></p>
+        <h2><strong>Paso 2. AutodockTools</strong></h2>
+        <p class="lead"> Cuando tenemos nuestras moléculas listas, es tiempo de UNIRLAS! Para ello, abriremos Autodock Tools y haremos una secuencia de pasos que nos permitirán realizar el docking molecular. Primero será necesario preparar tanto al ligando como a la proteína añadiendo algunas cargas, hidrógenos y un poco más. Posteriormente, será importante definir la superficie de acoplamiento molecular (o sea, la ubicación en la que el ligando estará unido a la proteína), esto será nuestra “Grid Box”. Una vez realizado esto proseguiremos a realizar el docking. Tranquilo, esto puede tardar unos minutos, mientras puedes tomar un café o tu bebida favorita! Una vez que se haya realizado el docking Autodock te dará 10 acoplamientos, tendrás que seleccionar al mejor (físicamente hablando); dicha decisión podrás hacerla observando las energías de unión en cada posibilidad, aquel con la MENOR energía, será el mejor docking. </p>
       </div>
     </div>
 <details>
@@ -461,11 +447,11 @@ Análisis de los resultados del docking. <br>
       </div>
 
       <div class="col-12 col-md-5 m-md-auto">
-        <h2><strong>Feature Three</strong></h2>
-        <p class="lead">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn
-          around.
+        <h2><strong>Paso 3. Lip glot</strong></h2>
+        <p class="lead"> Debido a que el análisis solo se puede realizar con un acoplamiento será importante seleccionar uno. Un tip que te podemos dar es: siempre el archivo 0 será el que tenga una menor energía de unión, por lo cual, será el mejor docking. 
+El análisis del docking es sumamente importante ya que este nos ayudará a saber cómo se comportan nuestros ligandos y cómo interactúa con la proteína de interés. 
         </p>
-        <p><a href="https://www.froala.com">Learn More <i class="fas fa-angle-right"></i></a></p>
+      
       </div>
     </div>
   </div>
