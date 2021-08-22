@@ -468,6 +468,91 @@ El análisis del docking es sumamente importante ya que este nos ayudará a sabe
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
 
+        <div class="row feature-item mt-5 pt-5">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/Dexrapeli.gif" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="150">
+            <h4> Resultados del docking con Ligante Natural (ANP)</h4>
+            <p>
+              <em>AutodockTools:</em> Para empezar, en el primer docking (ligante natural), 
+              la energía de unión que resultó para el mejor de los acoplamientos fue <strong>-2.65 kcal/mol</strong> , 
+              lo que quiere decir que la unión entre la Topoisomerasa II tiene algo de afinidad para permitir ese acople según los resultados de Autodock Tools.<br><br>
+            </p>
+            <p>
+              <em>LigPlus:</em> Al visualizar los datos en LigPlus, se resalta la molécula del ligando ANP (magenta) y todos los puentes de H (rojo punteado) 
+              que tiene con cada uno de los aminoácidos que la rodean. Además, se establecieron interacciones muy cercanas y consistentes, 
+              suficientes para pensar que gracias a ellas la unión proteína-ligando es estable y espontánea, éstas surgen a partir de los aminoácidos marcados en color verde, 
+              específicos para cada análisis (Acoplamiento 0, Acoplamiento 5 y Acoplamiento 9), para así recabar los siguientes datos:
+            </p>
+            <head>
+            <style>
+            table {
+               font-family: arial, sans-serif;
+               border-collapse: collapse;
+               width: 100%;
+             }
+
+            td, th {
+               border: 1px solid #dddddd;
+               text-align: left;
+               padding: 5px;
+            }
+
+            tr:nth-child(even) {
+               background-color: #dddddd;
+            }
+            </style>
+            </head>
+            <body>
+
+            <h2>Tabla 1.Resultados LigPlus; Cadena A-ANP</h2>
+
+            <table>
+              <tr>
+                <th># Acoplamiento</th>
+                <th>Aminoácido</th>
+                <th>Distancia</th>
+              </tr>
+              <tr>
+               <td>Acoplamiento 0</td>
+               <td>Glu87<br>
+                   Asp94<br>
+                   Ser149<br>
+                   Lys168<br>
+                   Thr215
+               </td>
+               <td>2.73 å<br>
+                  3.12 å<br>
+                  2.92 å<br>
+                  3.13 å<br>
+                  3.68 å<br>
+               </td>
+              </tr>
+              <tr>
+               <td>Acoplamiento 0</td>
+               <td>Glu87<br>
+                   Asp94<br>
+                   Ser149<br>
+                   Lys168<br>
+                   Thr215
+               </td>
+               <td>2.73 å<br>
+                  3.12 å<br>
+                  2.92 å<br>
+                  3.13 å<br>
+                  3.68 å<br>
+               </td>
+              </tr>
+
+            </table>
+            </body>
+
+          </div>
+          
+        </div>
+        
         <div class="row feature-item">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/img/dockingDM2.gif" class="img-fluid" alt="">
